@@ -1,10 +1,10 @@
 /*
-paginateTable 1.4
+paginateTable 1.5
 Copyright 2010-2011,  Matthew Page
 licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 
 Thanks to the following contributors:
-Greg Pedder, Leon, Annie, and Andrea.
+Greg Pedder, Leon, Annie, Andrea, and pollirrata.
 
 */
 (function ($) {
