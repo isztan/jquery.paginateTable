@@ -1,5 +1,5 @@
 /*
-paginateTable 1.5
+paginateTable 1.6
 Copyright 2010-2011,  Matthew Page
 licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 
