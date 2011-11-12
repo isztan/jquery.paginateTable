@@ -1,5 +1,5 @@
 /*
-paginateTable 1.6
+paginateTable 1.7
 Copyright 2010-2011,  Matthew Page
 licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 
@@ -84,7 +84,14 @@ Greg Pedder, Leon, Annie, Andrea, and pollirrata.
           var nextPage = pager.find(settings.nextPage);
           var prevPage = pager.find(settings.prevPage);
           var currentPage = pager.find(settings.currentPage).first();
-          
+          if (currentPage.size() > 0){
+            currentPage.text('1');
+          }
+          else{
+            pager.append('<span style="display:none" class="' + settings.currentPage.substr(1) + '" >1</span>');
+            currentPage = pager.find(settings.currentPage).first();
+          }
+ 
           var firstPage = pager.find(settings.firstPage);
           var lastPage = pager.find(settings.lastPage);
           
