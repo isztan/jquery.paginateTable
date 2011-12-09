@@ -5,7 +5,12 @@ Responds to next page and previous page clicks to change the displayed page.
 Displays total pages and current page. 
 Hides pager if only a single page of rows.
 
-Example:
+##Demo
+
+Try out a demo [here](http://jsfiddle.net/mattpage/n6jQX/11/)
+
+
+##Example:
     
     <table id="myTable">
      <tbody>
@@ -49,5 +54,3 @@ Feel free to add rows to your tables. Just call paginateTable again.
      myTable.children('tbody').append('<tr><td>Hi</td></tr>');
      myTable.paginateTable({ rowsPerPage: 2 }); 
 
-#Try it out:
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/mattpage/n6jQX/11/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
