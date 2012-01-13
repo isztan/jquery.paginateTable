@@ -91,7 +91,7 @@ Greg Pedder, Leon, Annie, Andrea, and pollirrata.
             pager.append('<span style="display:none" class="' + settings.currentPage.substr(1) + '" >1</span>');
             currentPage = pager.find(settings.currentPage).first();
           }
- 
+
           var firstPage = pager.find(settings.firstPage);
           var lastPage = pager.find(settings.lastPage);
           
@@ -191,8 +191,26 @@ Greg Pedder, Leon, Annie, Andrea, and pollirrata.
                        return false;
                    });
               }
+
+              /* Hide previous link when page is 1 and
+                 next link when the page is equal to the last page */
+
+              var currentPage = pager.find(settings.currentPage);
+              var totalPages = pager.find(settings.totalPages);
+              var prevPage = pager.find(settings.prevPage);
+              var nextPage = pager.find(settings.nextPage);
+
+              // Initially show both links
+              prevPage.show();
+              nextPage.show();
+
+              if (currentPage.text() == 1) {
+                prevPage.hide();
+              }
+              else if (currentPage.text() == totalPages.text()) {
+                nextPage.hide();
+              }
           }
-          
       }
   }
 	
